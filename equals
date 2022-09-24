@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class SwitchCase {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String uf = sc.next();
+		sc.close();
+		
+		if (uf.equals("AM")) {
+			System.out.println("Frete é de R$35,00");
+		}else if (uf.equals("GO")) {
+			System.out.println("Frete é de R$30,00");
+		}else if (uf.equals("BA")) {
+			System.out.println("Frete é de R$50,00");
+		}else if (uf.equalsIgnoreCase("SP") || uf.equals("RJ")) {
+			System.out.println("Frete ë de R$10,00");
+		}else {
+			System.out.println("Nao ha frete para este local");
+		}
+
+	}
+}
